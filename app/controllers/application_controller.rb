@@ -14,6 +14,7 @@ post '/team' do
 params[:team][:member].each do |details|
   Member.new(details)
 end
+@members = Member.all
 erb :team
 end
 
