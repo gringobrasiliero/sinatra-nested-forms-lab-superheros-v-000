@@ -15,7 +15,7 @@ params[:team][:member].each do |details|
   Member.new(details)
 end
 @members = Member.all
-erb :team
+erb :teams
 end
 
 
