@@ -10,6 +10,10 @@ end
 
 post '/team' do
 @team = Team.new(params[:team])
+
+params[:team][:member].each do |details|
+  Member.new(details)
+end
 erb :team
 end
 
