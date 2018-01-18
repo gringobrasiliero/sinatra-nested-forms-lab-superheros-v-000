@@ -9,7 +9,7 @@ get '/' do
 end
 
 post '/teams' do
-erb :team  
+erb :team
 end
 
 
